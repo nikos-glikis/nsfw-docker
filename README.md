@@ -4,7 +4,9 @@ nsfw-docker
 This project uses [Yahoo Open NSFW (Not Safe For Work)](https://github.com/yahoo/open_nsfw) to detect pornographic images.
 OpenNSFW uses Caffe pretrained neural network models and has a very big success rate.
 
-Since I found Caffe difficult to install, I modified the [Caffe Docker](https://github.com/BVLC/caffe/tree/master/docker) to create this project to run Yahoo Open NSFW.
+I have come across this problem on multiple projects, especially when there is user generated content that cannot be easily monitored. My solutions were not that good so I thought I'd give it a go.
+
+Since I found Caffe difficult to install, I modified the [Caffe Docker](https://github.com/BVLC/caffe/tree/master/docker) to create this project to run Yahoo Open NSFW. I have also modified the Yahoo script to accept urls instead of only local images.
 
 You can use it command line or start the build in server. The output is a float number from 0-1. Scores above 0.8 are NSFW. Everything below 0.2 is completely clean.
 
