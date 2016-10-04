@@ -31,11 +31,12 @@ There are 2 ways to run nsfw-docker:
     
 For Example: 
     
+    
         docker run -ti caffe:cpu python ./classify_nsfw.py http://www.personal.psu.edu/jul229/mini.jpg
 
 - As a web service (./run_server.sh):
     
-        docker run -ti -p 7981:7981 caffe:cpu  python server.py 7981
+        sudo docker run -ti -p 7981:7981 caffe:cpu  python server.py 7981
 
 Then to use the service:
 
