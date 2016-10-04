@@ -17,7 +17,7 @@ To install:
 
 - Clone the project.
 - Install [Docker](https://www.docker.com/) - [Ubuntu instructions here](https://docs.docker.com/engine/installation/linux/ubuntulinux/)
-- Run ./build_docker.sh
+- Run sudo ./build_docker.sh (This will take some time)
 
 Run
 ===
@@ -34,7 +34,7 @@ There are 2 ways to run nsfw-docker:
     
         docker run -ti caffe:cpu python ./classify_nsfw.py http://www.personal.psu.edu/jul229/mini.jpg
 
-- As a web service (./run_server.sh):
+- As a web service (./run_server.sh as root):
     
         sudo docker run -ti -p 7981:7981 caffe:cpu  python server.py 7981
 
