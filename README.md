@@ -33,10 +33,11 @@ For Example:
     
         docker run -ti caffe:cpu python ./classify_nsfw.py http://www.personal.psu.edu/jul229/mini.jpg
 
-- As a web service:
+- As a web service (./run_server.sh):
     
-    
-    /run_server.sh
+        docker run -ti -p 7981:7981 caffe:cpu  python server.py 7981
+
+Then to use the service:
 
 Visit: http://127.0.0.1:7981/[url] (Image link after final /)
         - For example: [http://127.0.0.1:7981/http://www.personal.psu.edu/jul229/mini.jpg](http://127.0.0.1:7981/http://www.personal.psu.edu/jul229/mini.jpg)
