@@ -27,12 +27,12 @@ There are 2 ways to run nsfw-docker:
 - Command Line: 
     
     
-        docker run -ti caffe:cpu python ./classify_nsfw.py [url|localfile]
+        sudo docker run -ti caffe:cpu python ./classify_nsfw.py [url|localfile]
     
 - For Example: 
     
     
-        docker run -ti caffe:cpu python ./classify_nsfw.py http://www.personal.psu.edu/jul229/mini.jpg
+        sudo docker run -ti caffe:cpu python ./classify_nsfw.py http://www.personal.psu.edu/jul229/mini.jpg
 
 - As a web service (./run_server.sh as root):
     
@@ -41,7 +41,8 @@ There are 2 ways to run nsfw-docker:
 Then to use the service:
 
 Visit: http://127.0.0.1:7981/[url] (Image link after final /)
-        - For example: [http://127.0.0.1:7981/http://www.personal.psu.edu/jul229/mini.jpg](http://127.0.0.1:7981/http://www.personal.psu.edu/jul229/mini.jpg)
+
+For example: [http://127.0.0.1:7981/http://www.personal.psu.edu/jul229/mini.jpg](http://127.0.0.1:7981/http://www.personal.psu.edu/jul229/mini.jpg)
         
 
      
