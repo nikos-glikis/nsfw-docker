@@ -29,7 +29,7 @@ There are 2 ways to run nsfw-docker:
     
         docker run -ti caffe:cpu python ./classify_nsfw.py [url|localfile]
     
-For Example: 
+- For Example: 
     
     
         docker run -ti caffe:cpu python ./classify_nsfw.py http://www.personal.psu.edu/jul229/mini.jpg
