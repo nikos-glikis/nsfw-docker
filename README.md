@@ -74,5 +74,5 @@ Usually something like:
 
 So the service can be accessed from: 
     
-    [http://192.168.99.100:7981](http://192.168.99.100:7981)
+[http://192.168.99.100:7981](http://192.168.99.100:7981)
     
