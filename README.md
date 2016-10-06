@@ -17,7 +17,7 @@ To install:
 
 - Clone the project.
 - Install [Docker](https://www.docker.com/) - [Ubuntu instructions here](https://docs.docker.com/engine/installation/linux/ubuntulinux/)
-- Run ./build_docker.sh
+- Run sudo ./build_docker.sh (This will take some time)
 
 Run
 ===
@@ -27,19 +27,22 @@ There are 2 ways to run nsfw-docker:
 - Command Line: 
     
     
-        docker run -ti caffe:cpu python ./classify_nsfw.py [url|localfile]
+        sudo docker run -ti caffe:cpu python ./classify_nsfw.py [url|localfile]
     
-For Example: 
+- For Example: 
     
-        docker run -ti caffe:cpu python ./classify_nsfw.py http://www.personal.psu.edu/jul229/mini.jpg
+    
+        sudo docker run -ti caffe:cpu python ./classify_nsfw.py http://www.personal.psu.edu/jul229/mini.jpg
 
-- As a web service:
+- As a web service (./run_server.sh as root):
     
-    
-    /run_server.sh
+        sudo docker run -ti -p 7981:7981 caffe:cpu  python server.py 7981
+
+Then to use the service:
 
 Visit: http://127.0.0.1:7981/[url] (Image link after final /)
-        - For example: [http://127.0.0.1:7981/http://www.personal.psu.edu/jul229/mini.jpg](http://127.0.0.1:7981/http://www.personal.psu.edu/jul229/mini.jpg)
+
+For example: [http://127.0.0.1:7981/http://www.personal.psu.edu/jul229/mini.jpg](http://127.0.0.1:7981/http://www.personal.psu.edu/jul229/mini.jpg)
         
 
      
@@ -72,5 +75,5 @@ Usually something like:
 
 So the service can be accessed from: 
     
-    [http://192.168.99.100:7981](http://192.168.99.100:7981)
+[http://192.168.99.100:7981](http://192.168.99.100:7981)
     
