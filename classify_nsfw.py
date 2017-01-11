@@ -18,6 +18,7 @@ import glob
 import time
 from PIL import Image
 from StringIO import StringIO
+os.environ['GLOG_minloglevel'] = '2'
 import caffe
 
 
