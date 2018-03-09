@@ -16,7 +16,7 @@ Installation
 To install:
 
 - Clone the project.
-- Install [Docker](https://www.docker.com/) - [Ubuntu instructions here](https://docs.docker.com/engine/installation/linux/ubuntulinux/)
+- Install [Docker](https://www.docker.com/) - [Ubuntu instructions here](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 - Run sudo ./build_docker.sh (This will take some time)
 
 Run
