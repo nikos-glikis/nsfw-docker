@@ -1,5 +1,7 @@
-FROM ubuntu:14.04
+FROM python:2.7
 MAINTAINER caffe-maint@googlegroups.com
+
+RUN pip install --upgrade pip
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
